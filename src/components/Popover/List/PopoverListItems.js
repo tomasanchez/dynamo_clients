@@ -26,9 +26,9 @@ const PopoverListItems = ({ popoverRef, title, items }) => {
           {items.map((item, index) => {
             return (
               <CustomListItem key={index} onClick={item.onClick}>
-                <FlexBox justifyContent={FlexBoxJustifyContent.SpaceAround} alignItems={FlexBoxAlignItems.Start} style={style.flexbox}>
-                  <Icon style={spacing.sapUiTinyMarginBeginEnd} name={item.icon} />
-                  <Text style={spacing.sapUiTinyMarginEnd}>{item.description}</Text>
+                <FlexBox justifyContent={FlexBoxJustifyContent.Stretch} alignItems={FlexBoxAlignItems.Start} style={style.flexbox}>
+                  <Icon style={{ width: '1.5rem', ...spacing.sapUiTinyMarginBeginEnd }} name={item.icon} />
+                  <Text style={spacing.sapUiSmallMarginEnd}>{item.description}</Text>
                   <div>{item.children}</div>
                 </FlexBox>
               </CustomListItem>

@@ -34,7 +34,7 @@ const Shell = ({ title, ...props }) => {
       },
       {
         description: t('shell.button.user.settings.item.themeSwitch'),
-        icon: 'customize',
+        icon: 'status-negative',
         children: <ThemeSwitch />,
       },
     ],

@@ -2,7 +2,6 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ReactQueryDevtools } from 'react-query-devtools';
 import { ThemeProvider } from '@ui5/webcomponents-react/lib/ThemeProvider';
 
 import ErrorBoundary from './pages/Fallback/ErrorBoundary';
@@ -17,7 +16,6 @@ const App = () => {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <ReactQueryDevtools initialIsOpen={false} />
         <Helmet title={t('helmet.title.app')} />
         <Shell title={t('shell.title')} />
         <ErrorBoundary>

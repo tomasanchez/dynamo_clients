@@ -21,18 +21,10 @@ describe('BrowserProvider.js Test Suite', () => {
   });
 
   test('should correctly replace key when passed correct replaceValue', () => {
-    const key = 'TODO_DETAIL';
+    const key = 'DETAIL';
 
     const output = getUrl(key, [{ value: 1 }]);
 
-    expect(output).toEqual('/todo/detail/1');
-  });
-
-  test('should erroneously replace key when passed correct replaceValue', () => {
-    const key = 'TODO_DETAIL';
-
-    const replaceUrl = () => getUrl(key, [{ value: 1, search: ':not_id' }]);
-
-    expect(replaceUrl()).toEqual('/todo/detail/:id');
+    expect(output).toEqual('/clients/detail/1');
   });
 });

@@ -20,14 +20,7 @@ describe('ThemeSwitch.js Test Suite', () => {
   });
 
   test('Should load black contrast theme', () => {
-    const themeSet = 'sap_fiori_3_hcb';
-    render(<ThemeSwitch storedTheme={themeSet} />);
-    const currentTheme = getTheme();
-    expect(currentTheme).toBe(themeSet);
-  });
-
-  test('Should load belize theme', () => {
-    const themeSet = 'sap_belize';
+    const themeSet = 'sap_fiori_3_dark';
     render(<ThemeSwitch storedTheme={themeSet} />);
     const currentTheme = getTheme();
     expect(currentTheme).toBe(themeSet);
