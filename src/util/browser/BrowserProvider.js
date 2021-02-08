@@ -1,6 +1,7 @@
 import { getUrl as getUrlProvider } from '../URLProvider';
 
 const URLs = {
+  BASEURL: '/dynamo',
   HOME: '/',
   MASTER: '/clients',
   DETAIL: '/clients/detail/:id',

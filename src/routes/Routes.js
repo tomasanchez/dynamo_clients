@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 import { getUrl } from '../util/browser/BrowserProvider';
 
 import { BusyIndicator } from '@ui5/webcomponents-react/lib/BusyIndicator';
@@ -12,13 +12,15 @@ const MasterDetail = lazy(() => import('../pages/MasterDetail/MasterDetail'));
 const Routes = () => {
   return (
     <Suspense fallback={<BusyIndicator active />}>
-      <Switch>
-        <Redirect path={getUrl('HOME')} exact to={getUrl('MASTER')} />
-        <Route path={getUrl('MASTER')} exac component={MasterDetail} />
-        <Route path={getUrl('BUGGY')} exact component={Buggy} />
-        <Route path={getUrl('NOT_FOUND')} exact component={NotFound} />
-        <Route path={getUrl('ANY')} component={NotFound} />
-      </Switch>
+      <BrowserRouter basename={getUrl('BASEURL')}>
+        <Switch>
+          <Redirect path={getUrl('HOME')} push exact to={getUrl('MASTER')} />
+          <Route path={getUrl('MASTER')} exac component={MasterDetail} />
+          <Route path={getUrl('BUGGY')} exact component={Buggy} />
+          <Route path={getUrl('NOT_FOUND')} exact component={NotFound} />
+          <Route path={getUrl('ANY')} component={NotFound} />
+        </Switch>
+      </BrowserRouter>
     </Suspense>
   );
 };
