@@ -6,12 +6,9 @@
   "shell.title": "TodoList Application",
   "shell.logo.alt": "SAP Logo",
   "shell.button.user.settings": "User Settings",
-  "shell.button.user.settings.item.themeSwitch": "Theme",
+  "shell.button.user.settings.item.themeSwitch": "Dark Mode",
   "shell.button.user.settings.item.themeSwitch.option.default": "Default",
   "shell.button.user.settings.item.themeSwitch.option.dark": "Dark",
-  "shell.button.user.settings.item.themeSwitch.option.highContrastBlack": "High Contrast Black",
-  "shell.button.user.settings.item.themeSwitch.option.highContrastWhite": "High Contrast White",
-  "shell.button.user.settings.item.themeSwitch.option.belize": "Belize",
   "shell.button.user.settings.item.languageSwitch": "Language",
   "shell.button.user.settings.item.languageSwitch.en": "English",
   "shell.button.user.settings.item.languageSwitch.pt": "Portugues",
@@ -20,5 +17,10 @@
   "page.notfound.text": "Hmmm, we could find this URL",
   "page.notfound.alt": "Not Found",
   "page.fallback.reload.text": "Reload this page",
-  "components.navback.text": "Back"
+  "components.navback.text": "Back",
+  "addButton": "Add new Client",
+  "sortButton": "Sort Clients",
+  "clientsListHeader": "Clients",
+  "searchButton": "Search",
+  "searchClientPH": "Enter a name"
 }
