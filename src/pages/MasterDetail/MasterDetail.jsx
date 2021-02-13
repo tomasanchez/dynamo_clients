@@ -33,7 +33,6 @@ const MasterDetail = () => {
       style={{ maxHeight: '100vh' }}
       startColumn={<Master data={oMoviesSet.results} onItemClick={onStartColumnClick} />}
       midColumn={<Detail onClose={onCloseDetails} />}
-      endColumn={<p>!!!!</p>}
     />
   );
 };
