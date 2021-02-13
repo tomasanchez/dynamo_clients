@@ -21,7 +21,15 @@ function HeaderActions(props) {
 
   if (!isMobile())
     // Maximize-Minimize (Not in phone for screen size)
-    aButtons.push(<Button key="2" icon={props.bFullScreen ? 'exit-full-screen' : 'full-screen'} design="Transparent" tooltip={t('fullscreenButton')} style={sapUiSmallMarginEnd} />);
+    aButtons.push(
+      <Button
+        key="2"
+        icon={props.bFullScreen ? 'exit-full-screen' : 'full-screen'}
+        design="Transparent"
+        tooltip={props.bFullScreen ? t('exitFullScreenButton') : t('fullScreenButton')}
+        style={sapUiSmallMarginEnd}
+      />,
+    );
 
   // Close button
   aButtons.push(<Button key="3" onClick={props.onClose} icon="decline" tooltip={t('closeButton')} design="Transparent" />);

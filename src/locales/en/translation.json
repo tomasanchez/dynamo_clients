@@ -22,5 +22,9 @@
   "sortButton": "Sort Clients",
   "clientsListHeader": "Clients",
   "searchButton": "Search",
-  "searchClientPH": "Enter a name"
+  "searchClientPH": "Enter a name",
+  "editButton": "Edit",
+  "closeButton": "Close",
+  "exitFullScreenButton": "Exit Full-screen",
+  "fullScreenButton": "Full-screen"
 }
