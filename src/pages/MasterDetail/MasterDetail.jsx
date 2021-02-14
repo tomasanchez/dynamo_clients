@@ -3,10 +3,26 @@ import { FlexibleColumnLayout } from '@ui5/webcomponents-react/lib/FlexibleColum
 import oMoviesSet from '../../util/localservices/mockdata/movies';
 import oCastSet from '../../util/localservices/mockdata/cast';
 import { FCLLayout } from '@ui5/webcomponents-react/lib/FCLLayout';
-import { List, StandardListItem, Title } from '@ui5/webcomponents-react';
 import Master from './Master/Master';
 import Detail from './Detail/Detail';
 
+/**
+ * Convenience array for switching layout
+ * @readonly
+ * @private
+ */
+const aLayouts = {
+  masterFs: FCLLayout.OneColumn,
+  twoColumns: FCLLayout.TwoColumnsMidExpanded,
+  detailsFs: FCLLayout.MidColumnFullScreen,
+};
+
+/**
+ * Master-Detail Page Layout
+ * @function
+ * @public
+ * @returns {ui5.webcomponents.reac.FlexibleColumnLayout} A master-detail page
+ */
 const MasterDetail = () => {
   const [sLayout, setLayout] = useState(FCLLayout.OneColumn);
   const [selectedMovie, setSelectedMovie] = useState(oMoviesSet.results[0]);
@@ -17,8 +33,13 @@ const MasterDetail = () => {
   };
 
   const onStartColumnClick = (e) => {
-    setSelectedMovie(oMoviesSet.results.find((item) => item.movie === e.detail.item.dataset.movie));
-    setLayout(FCLLayout.TwoColumnsMidExpanded);
+    try {
+      setSelectedMovie(oMoviesSet.results.find((item) => item.movie === e.detail.item.dataset.movie));
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLayout(aLayouts['twoColumns']);
+    }
   };
 
   const onMiddleColumnClick = (e) => {
