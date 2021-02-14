@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { Toolbar } from '@ui5/webcomponents-react/lib/Toolbar';
 import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
 import { Title } from '@ui5/webcomponents-react/lib/Title';
@@ -16,13 +16,21 @@ import { Icon } from '@ui5/webcomponents-react';
  */
 const OverflowToolbar = (props) => {
   const { t } = useTranslation();
+
+  const onResetFilters = (oEvent) => {
+    var oInput = oEvent.srcElement.parentNode.parentNode.childNodes[2].firstChild;
+    oInput.value = '';
+    props.onFilter();
+  };
+
   return (
-    <Toolbar className="OverfloowToolbar">
+    <Toolbar style={{ position: 'sticky' }}>
       <FlexBox>
         <Title level={'H5'} style={{ marginLeft: '1rem' }}>{`${t('clientsListHeader')} (${props.count ? props.count : 0})`}</Title>
       </FlexBox>
       <ToolbarSpacer />
       <Input onInput={props.onFilter} placeholder={t('searchClientPH')} icon={<Icon name="search" interactive={false} showTooltip={true} tooltip={t('searchButton')} />} />
+      <Button icon="reset" design="Transparent" tooltip={t('resetButton')} onClick={onResetFilters} />
       <Button icon="sort" design="Transparent" tooltip={t('sortButton')} />
       <Button icon="add" design="Emphasized" tooltip={t('addButton')} />
     </Toolbar>
