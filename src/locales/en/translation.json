@@ -1,9 +1,9 @@
 {
   "app.generics.close": "Close",
-  "helmet.title.app": "TodoList App",
+  "helmet.title.app": "Dynamo - Customers",
   "helmet.title.error": "Buggy Component - TodoList App",
   "helmet.title.notfound": "NotFound - TodoList App",
-  "shell.title": "TodoList Application",
+  "shell.title": "Dynamo Customers",
   "shell.logo.alt": "SAP Logo",
   "shell.button.user.settings": "User Settings",
   "shell.button.user.settings.item.themeSwitch": "Dark Mode",
@@ -26,6 +26,9 @@
   "resetButton": "Reset",
   "editButton": "Edit",
   "closeButton": "Close",
+  "telTooltip": "Phone number",
+  "mailTooltip": "Send mail",
+  "quickWapp": "Quick Whatsapp",
   "exitFullScreenButton": "Exit Full-screen",
   "fullScreenButton": "Full-screen"
 }
