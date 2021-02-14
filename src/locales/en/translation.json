@@ -23,6 +23,7 @@
   "clientsListHeader": "Clients",
   "searchButton": "Search",
   "searchClientPH": "Enter a name",
+  "resetButton": "Reset",
   "editButton": "Edit",
   "closeButton": "Close",
   "exitFullScreenButton": "Exit Full-screen",

@@ -4,6 +4,13 @@ import { StandardListItem } from '@ui5/webcomponents-react/lib/StandardListItem'
 import { useTranslation } from 'react-i18next/';
 import OverflowToolbar from '../../../components/OverflowToolbar/OverflowToolbar';
 
+/**
+ * MasterPages
+ * @memberof MasterDetail
+ * @private
+ * @param {any} props
+ * @returns {ui5.webcomponents.react.List} a Master-List
+ */
 function Master(props) {
   const { t } = useTranslation();
   const aData = props.data;
@@ -11,7 +18,11 @@ function Master(props) {
   const aListData = aData.filter((oEntity) => oEntity.movie.toUpperCase().includes(sQuery));
 
   const onFilter = (oEvent) => {
-    setQuery(oEvent.target.value.toUpperCase());
+    try {
+      setQuery(oEvent.target.value.toUpperCase());
+    } catch (err) {
+      setQuery('');
+    }
   };
 
   return (

@@ -5,10 +5,6 @@ import { useTranslation } from 'react-i18next/';
 import HeaderActions from '../../../components/HeaderActions/HeaderActions';
 
 function Detail(props) {
-  const onClose = () => {
-    props.onClose();
-  };
-
   return (
     <div slot={props.slot}>
       <ObjectPage selectedSectionId="goals" headerActions={<HeaderActions onClose={props.onClose} />}>
