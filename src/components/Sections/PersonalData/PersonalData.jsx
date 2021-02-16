@@ -3,45 +3,59 @@ import { Form } from '@ui5/webcomponents-react/lib/Form';
 import { FormItem } from '@ui5/webcomponents-react/lib/FormItem';
 import { Text } from '@ui5/webcomponents-react/lib/Text';
 import { Label } from '@ui5/webcomponents-react/lib/Label';
-import { Input } from '@ui5/webcomponents-react/lib/Input';
 import { useTranslation } from 'react-i18next/';
 import { FormGroup } from '@ui5/webcomponents-react/lib/FormGroup';
 import { KeyInfos, NameTitle, UserSubTitle } from '../../ObjectHeader/HeaderContent/HeaderTitles';
+import { Formatter } from '../../../model/formatter';
+import { Title } from '@ui5/webcomponents-react';
 
+const style = {
+  title: {
+    marginTop: '1rem',
+    marginBottom: '0.35rem',
+  },
+};
+
+/**
+ * Personal Data Form
+ * @constructor
+ * @public
+ * @returns {ui5.webcomponents.react.Form} a Form layout
+ */
 function PersonalData() {
   const { t } = useTranslation();
   return (
     <Form title={t('personalDataSectionTitle')}>
+      <FormItem label={t('idLabel')}>
+        <Text>{Formatter.toLocaleNumber(40000000)}</Text>
+      </FormItem>
       <FormItem label={<Label>{t('nameLabel')}</Label>}>
         <Text>{NameTitle()}</Text>
       </FormItem>
       <FormItem label={t('addressLabel')}>
-        <Text>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatum a sint perferendis deserunt recusandae deleniti, nesciunt dolor quod corrupti corporis itaque laudantium natus
-          temporibus enim necessitatibus omnis assumenda totam.
-        </Text>
+        <Text>Fake Street 212th, Greater Buenos Aires</Text>
       </FormItem>
-      <FormGroup title={t('contactFormGroupTitle')}>
+      <FormItem label={t('birthdayLabel')}>
+        <Text>{new Date().toLocaleDateString()}</Text>
+      </FormItem>
+      <FormGroup>
+        <Title level="H3" style={style.title}>
+          {t('contactFormGroupTitle')}
+        </Title>
         <FormItem label={t('celphoneLabel')}>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi beatae maxime quidem recusandae ad ipsa possimus inventore, itaque fugiat, nulla quaerat cumque voluptate
-            debitis obcaecati in excepturi doloribus aliquam?
-          </Text>
+          <Text>11 6610-7356</Text>
         </FormItem>
         <FormItem label={t('phoneLabel')}>
-          <Text>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore beatae fuga, incidunt eius perspiciatis optio voluptate praesentium culpa? Voluptates dolorem error deleniti,
-            perspiciatis aliquid totam ipsum placeat aliquam obcaecati aperiam.
-          </Text>
+          <Text>4000-2000</Text>
         </FormItem>
         <FormItem label={t('mailLabel')}>
-          <Text>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero quis rerum ipsa fugit nostrum exercitationem itaque qui, repudiandae eos porro, minus magni. Vitae sed eveniet iure
-            quas aspernatur blanditiis.
-          </Text>
+          <Text>tosanchez@frba.utn.edu.ar</Text>
         </FormItem>
       </FormGroup>
-      <FormGroup title={t('otherFormGroupTitle')}>
+      <FormGroup>
+        <Title level="H3" style={style.title}>
+          {t('otherFormGroupTitle')}
+        </Title>
         <FormItem label={t('userNameLabel')}>
           <Text>{UserSubTitle()}</Text>
         </FormItem>
