@@ -7,6 +7,7 @@ export const Formatter = {
   toTitle: titleFormat,
   toUser: userFormat,
   toPaymentState: getPaymentState,
+  toLocaleNumber: Intl.NumberFormat().format,
 };
 
 /**
