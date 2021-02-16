@@ -27,9 +27,15 @@ const MasterDetail = () => {
   const [sLayout, setLayout] = useState(FCLLayout.OneColumn);
   const [selectedMovie, setSelectedMovie] = useState(oMoviesSet.results[0]);
   const [selectedCast, setSelectedCast] = useState(oCastSet.results[0]);
+  const [midFullScreen, setMidfullScreen] = useState(false);
 
   const onCloseDetails = () => {
     setLayout(FCLLayout.OneColumn);
+  };
+
+  const onMidFullScren = () => {
+    setLayout(!midFullScreen ? FCLLayout.MidColumnFullScreen : FCLLayout.TwoColumnsMidExpanded);
+    setMidfullScreen(!midFullScreen);
   };
 
   const onStartColumnClick = (e) => {
@@ -51,9 +57,9 @@ const MasterDetail = () => {
     <FlexibleColumnLayout
       noArrows={false}
       layout={sLayout}
-      style={{ maxHeight: '100vh' }}
+      style={{ maxHeight: '95.3vh' }}
       startColumn={<Master data={oMoviesSet.results} onItemClick={onStartColumnClick} />}
-      midColumn={<Detail onClose={onCloseDetails} />}
+      midColumn={<Detail onClose={onCloseDetails} isFullScren={midFullScreen} onFullScreen={onMidFullScren} />}
     />
   );
 };

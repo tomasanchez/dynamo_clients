@@ -39,7 +39,7 @@ function Detail(props) {
         keyInfos={<KeyInfos />}
         headerContent={<HeaderContent />}
         selectedSectionId="personalData"
-        headerActions={<HeaderActions onClose={props.onClose} />}
+        headerActions={<HeaderActions onClose={props.onClose} onFullScreen={props.onFullScreen} isFullScreen={props.isFullScreen} />}
       >
         <ObjectPageSection aria-label={t('personalDataSectionTitle')} id="personalData" title={t('personalDataSectionTitle')}>
           <PersonalData />

@@ -19,14 +19,32 @@ function HeaderActions(props) {
   // Main action
   aButtons.push(<Button key="1" icon="edit" design="Emphasized" tooltip={t('editButton')} style={sapUiSmallMarginEnd} />);
 
+  /**
+   * Event handler when full scren button is pressed.
+   * @function
+   * @private
+   * @param {event} oEvent
+   */
+  const onFullScreen = (oEvent) => {
+    // Getting html component
+    var oButton = oEvent.target,
+      isFullScreen = oButton.icon === 'full-screen';
+    // Changing icon and tooltip
+    oButton.icon = isFullScreen ? 'exit-full-screen' : 'full-screen';
+    oButton.title = isFullScreen ? t('exitFullScreenButton') : t('fullScreenButton');
+    // Changing Flexible Column Layout
+    props.onFullScreen();
+  };
+
   if (!isMobile())
     // Maximize-Minimize (Not in phone for screen size)
     aButtons.push(
       <Button
         key="2"
-        icon={props.bFullScreen ? 'exit-full-screen' : 'full-screen'}
+        icon={props.isFullScreen ? 'exit-full-screen' : 'full-screen'}
         design="Transparent"
-        tooltip={props.bFullScreen ? t('exitFullScreenButton') : t('fullScreenButton')}
+        onClick={onFullScreen}
+        tooltip={props.isFullScreen ? t('exitFullScreenButton') : t('fullScreenButton')}
         style={sapUiSmallMarginEnd}
       />,
     );
