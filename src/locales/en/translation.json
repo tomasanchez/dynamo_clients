@@ -30,5 +30,16 @@
   "mailTooltip": "Send mail",
   "quickWapp": "Quick Whatsapp",
   "exitFullScreenButton": "Exit Full-screen",
-  "fullScreenButton": "Full-screen"
+  "fullScreenButton": "Full-screen",
+  "personalDataSectionTitle": "Personal data",
+  "contactFormGroupTitle": "Contact",
+  "nameLabel": "Name",
+  "addressLabel": "Address",
+  "celphoneLabel": "Phone",
+  "phoneLabel": "Home Phone",
+  "mailLabel": "Mail",
+  "otherFormGroupTitle": "Others",
+  "joinDateLabel": "Joined in",
+  "statusLabel": "Status",
+  "userNameLabel": "User name"
 }

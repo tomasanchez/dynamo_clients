@@ -6,6 +6,7 @@ import HeaderActions from '../../../components/ObjectHeader/HeaderActions/Header
 import { Avatar } from '@ui5/webcomponents-react/lib/Avatar';
 import HeaderContent from '../../../components/ObjectHeader/HeaderContent/HeaderContent';
 import { KeyInfos, NameTitle, UserSubTitle } from '../../../components/ObjectHeader/HeaderContent/HeaderTitles';
+import PersonalData from '../../../components/Sections/PersonalData/PersonalData';
 
 /**
  * Convenience method for generating random avatar colors
@@ -27,6 +28,8 @@ const generateRandomColor = (isLoading) => {
  * @return {ui5.webcomponents.react.ObjectPage} Details Page
  */
 function Detail(props) {
+  const { t } = useTranslation();
+
   return (
     <div slot={props.slot}>
       <ObjectPage
@@ -35,11 +38,11 @@ function Detail(props) {
         subTitle={UserSubTitle()}
         keyInfos={<KeyInfos />}
         headerContent={<HeaderContent />}
-        selectedSectionId="goals"
+        selectedSectionId="personalData"
         headerActions={<HeaderActions onClose={props.onClose} />}
       >
-        <ObjectPageSection aria-label="Goals" id="goals" title="Goals">
-          <p>Hola</p>
+        <ObjectPageSection aria-label={t('personalDataSectionTitle')} id="personalData" title={t('personalDataSectionTitle')}>
+          <PersonalData />
         </ObjectPageSection>
       </ObjectPage>
     </div>
