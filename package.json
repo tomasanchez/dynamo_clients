@@ -13,7 +13,6 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "formik": "^2.1.7",
-    "husky": "^5.0.9",
     "i18next": "^19.8.9",
     "i18next-browser-languagedetector": "^6.0.1",
     "react": "^17.0.1",
@@ -79,12 +78,5 @@
     "transformIgnorePatterns": [
       "node_modules/(?!(@ui5|lit-html)).*\\.js$"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "yarn run push:pre",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && true"
-    }
   }
 }
