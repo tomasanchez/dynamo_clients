@@ -8,7 +8,19 @@ export const Formatter = {
   toUser: userFormat,
   toPaymentState: getPaymentState,
   toLocaleNumber: Intl.NumberFormat().format,
+  toDate: getDateString,
 };
+
+/**
+ * Formats date or creates a new one
+ * @function
+ * @public
+ * @param {Date} date a date object
+ * @return {string} formatted date
+ */
+export function getDateString(date = new Date()) {
+  return date.toLocaleDateString();
+}
 
 /**
  * Obtains payment status value state
