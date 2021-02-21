@@ -22,7 +22,7 @@
   "sortButton": "Sort Clients",
   "clientsListHeader": "Clients",
   "searchButton": "Search",
-  "searchClientPH": "Enter a name",
+  "searchClientPH": "Find a customer",
   "resetButton": "Reset",
   "editButton": "Edit",
   "closeButton": "Close",
@@ -43,5 +43,9 @@
   "otherFormGroupTitle": "Others",
   "joinDateLabel": "Joined in",
   "statusLabel": "Status",
-  "userNameLabel": "User name"
+  "userNameLabel": "User name",
+  "subscriptionsSectionTitle": "Subscriptions",
+  "subscriptionsListHeader": "Subscribed Acivities",
+  "subscriptionsNoData": "Customer has no subscribed activities yet",
+  "subscriptionExpiration": "Expiration date"
 }
