@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import { useTodo } from '../../../hooks/services/useTodos';
 
-import { BusyIndicator } from '@ui5/webcomponents-react/lib/BusyIndicator';
+import { BusyIndicator } from '@ui5/webcomponents-react/dist/BusyIndicator';
 import NavBack from '../../../components/NavBack/NavBack';
 import CenteredContent from '../../../components/Layout/CenteredContent';
 

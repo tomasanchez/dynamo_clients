@@ -1,13 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Title } from '@ui5/webcomponents-react/lib/Title';
-import { Link } from '@ui5/webcomponents-react/lib/Link';
-import { TitleLevel } from '@ui5/webcomponents-react/lib/TitleLevel';
-import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
-import { FlexBoxAlignItems } from '@ui5/webcomponents-react/lib/FlexBoxAlignItems';
-import { FlexBoxDirection } from '@ui5/webcomponents-react/lib/FlexBoxDirection';
-import { FlexBoxJustifyContent } from '@ui5/webcomponents-react/lib/FlexBoxJustifyContent';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
+import { Link } from '@ui5/webcomponents-react/dist/Link';
+import { TitleLevel } from '@ui5/webcomponents-react/dist/TitleLevel';
+import { FlexBox } from '@ui5/webcomponents-react/dist/FlexBox';
+import { FlexBoxAlignItems } from '@ui5/webcomponents-react/dist/FlexBoxAlignItems';
+import { FlexBoxDirection } from '@ui5/webcomponents-react/dist/FlexBoxDirection';
+import { FlexBoxJustifyContent } from '@ui5/webcomponents-react/dist/FlexBoxJustifyContent';
 
 import { getUrl } from '../../util/browser/BrowserProvider';
 

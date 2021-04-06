@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Button } from '@ui5/webcomponents-react/lib/Button';
-import { ButtonDesign } from '@ui5/webcomponents-react/lib/ButtonDesign';
-import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
+import { Button } from '@ui5/webcomponents-react/dist/Button';
+import { ButtonDesign } from '@ui5/webcomponents-react/dist/ButtonDesign';
+import { FlexBox } from '@ui5/webcomponents-react/dist/FlexBox';
 import { useHistory } from 'react-router-dom';
 import { spacing } from '@ui5/webcomponents-react-base';
 

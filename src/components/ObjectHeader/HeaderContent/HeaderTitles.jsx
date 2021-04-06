@@ -1,5 +1,5 @@
 import React from 'react';
-import { ObjectStatus } from '@ui5/webcomponents-react/lib/ObjectStatus';
+import { ObjectStatus } from '@ui5/webcomponents-react/dist/ObjectStatus';
 import { Formatter } from '../../../model/formatter';
 
 /**

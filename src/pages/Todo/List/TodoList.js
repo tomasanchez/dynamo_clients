@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet';
 import { useHistory } from 'react-router-dom';
 import { isChrome, isMobile, isTablet, isDesktop, isIE } from '@ui5/webcomponents-base/dist/Device';
 
-import { Link } from '@ui5/webcomponents-react/lib/Link';
-import { Title } from '@ui5/webcomponents-react/lib/Title';
-import { TitleLevel } from '@ui5/webcomponents-react/lib/TitleLevel';
-import { Text } from '@ui5/webcomponents-react/lib/Text';
+import { Link } from '@ui5/webcomponents-react/dist/Link';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
+import { TitleLevel } from '@ui5/webcomponents-react/dist/TitleLevel';
+import { Text } from '@ui5/webcomponents-react/dist/Text';
 import { getUrl } from '../../../util/browser/BrowserProvider';
 import ComponentWithAuthorizationRestriction from '../../../auth/ComponentWithAuthorizationRestriction';
 import CenteredContent from '../../../components/Layout/CenteredContent';

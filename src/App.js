@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ThemeProvider } from '@ui5/webcomponents-react/lib/ThemeProvider';
+import { ThemeProvider } from '@ui5/webcomponents-react/dist/ThemeProvider';
 
 import ErrorBoundary from './pages/Fallback/ErrorBoundary';
 import Shell from './components/Shell/Shell';

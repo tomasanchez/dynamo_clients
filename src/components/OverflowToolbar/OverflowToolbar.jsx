@@ -1,11 +1,11 @@
-import React, { useCallback, useRef, useState } from 'react';
-import { Toolbar } from '@ui5/webcomponents-react/lib/Toolbar';
-import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
-import { Title } from '@ui5/webcomponents-react/lib/Title';
-import { ToolbarSpacer } from '@ui5/webcomponents-react/lib/ToolbarSpacer';
+import React from 'react';
+import { Toolbar } from '@ui5/webcomponents-react/dist/Toolbar';
+import { FlexBox } from '@ui5/webcomponents-react/dist/FlexBox';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
+import { ToolbarSpacer } from '@ui5/webcomponents-react/dist/ToolbarSpacer';
 import { useTranslation } from 'react-i18next/';
-import { Button } from '@ui5/webcomponents-react/lib/Button';
-import { Input } from '@ui5/webcomponents-react/lib/Input';
+import { Button } from '@ui5/webcomponents-react/dist/Button';
+import { Input } from '@ui5/webcomponents-react/dist/Input';
 import { Icon } from '@ui5/webcomponents-react';
 
 /**

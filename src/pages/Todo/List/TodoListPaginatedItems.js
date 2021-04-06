@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useTodos } from '../../../hooks/services/useTodos';
 
-import { List } from '@ui5/webcomponents-react/lib/List';
-import { StandardListItem } from '@ui5/webcomponents-react/lib/StandardListItem';
-import { BusyIndicator } from '@ui5/webcomponents-react/lib/BusyIndicator';
-import { Title } from '@ui5/webcomponents-react/lib/Title';
-import { TitleLevel } from '@ui5/webcomponents-react/lib/TitleLevel';
+import { List } from '@ui5/webcomponents-react/dist/List';
+import { StandardListItem } from '@ui5/webcomponents-react/dist/StandardListItem';
+import { BusyIndicator } from '@ui5/webcomponents-react/dist/BusyIndicator';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
+import { TitleLevel } from '@ui5/webcomponents-react/dist/TitleLevel';
 import { Pagination } from '../../../components/Pagination/Pagination';
 
 import { getUrl } from '../../../util/browser/BrowserProvider';

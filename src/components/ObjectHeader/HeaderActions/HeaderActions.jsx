@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button } from '@ui5/webcomponents-react/lib/Button';
+import { Button } from '@ui5/webcomponents-react/dist/Button';
 import { useTranslation } from 'react-i18next';
-import { sapUiSmallMarginEnd } from '@ui5/webcomponents-react-base/lib/spacing';
-import { isMobile } from '@ui5/webcomponents-base/dist/Device';
+import { sapUiSmallMarginEnd } from '@ui5/webcomponents-react-base/dist/spacing';
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 /**
  * Split-Code for Obtainning corresponding buttons
@@ -36,7 +37,7 @@ function HeaderActions(props) {
     props.onFullScreen();
   };
 
-  if (!isMobile())
+  if (!isMobile)
     // Maximize-Minimize (Not in phone for screen size)
     aButtons.push(
       <Button

@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Popover } from '@ui5/webcomponents-react/lib/Popover';
-import { PlacementType } from '@ui5/webcomponents-react/lib/PlacementType';
-import { FlexBoxDirection } from '@ui5/webcomponents-react/lib/FlexBoxDirection';
-import { Title } from '@ui5/webcomponents-react/lib/Title';
-import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
+import { Popover } from '@ui5/webcomponents-react/dist/Popover';
+import { PlacementType } from '@ui5/webcomponents-react/dist/PlacementType';
+import { FlexBoxDirection } from '@ui5/webcomponents-react/dist/FlexBoxDirection';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
+import { FlexBox } from '@ui5/webcomponents-react/dist/FlexBox';
 import { spacing } from '@ui5/webcomponents-react-base';
 
 const PopoverInfo = ({ popoverRef, placementType = PlacementType.Bottom, title, ...props }) => {

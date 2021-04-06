@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import { Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 import { getUrl } from '../util/browser/BrowserProvider';
 
-import { BusyIndicator } from '@ui5/webcomponents-react/lib/BusyIndicator';
+import { BusyIndicator } from '@ui5/webcomponents-react/dist/BusyIndicator';
 import RouteWithAuthorizationRestriction from '../auth/RouteWithAuthorizationRestriction';
 
 const NotFound = lazy(() => import('../pages/Fallback/NotFound'));

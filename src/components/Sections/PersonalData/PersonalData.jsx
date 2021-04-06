@@ -1,10 +1,10 @@
 import React from 'react';
-import { Form } from '@ui5/webcomponents-react/lib/Form';
-import { FormItem } from '@ui5/webcomponents-react/lib/FormItem';
-import { Text } from '@ui5/webcomponents-react/lib/Text';
-import { Label } from '@ui5/webcomponents-react/lib/Label';
+import { Form } from '@ui5/webcomponents-react/dist/Form';
+import { FormItem } from '@ui5/webcomponents-react/dist/FormItem';
+import { Text } from '@ui5/webcomponents-react/dist/Text';
+import { Label } from '@ui5/webcomponents-react/dist/Label';
 import { useTranslation } from 'react-i18next/';
-import { FormGroup } from '@ui5/webcomponents-react/lib/FormGroup';
+import { FormGroup } from '@ui5/webcomponents-react/dist/FormGroup';
 import { KeyInfos, NameTitle, UserSubTitle } from '../../ObjectHeader/HeaderContent/HeaderTitles';
 import { Formatter } from '../../../model/formatter';
 import { Title } from '@ui5/webcomponents-react';

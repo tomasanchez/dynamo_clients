@@ -1,8 +1,8 @@
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Option } from '@ui5/webcomponents-react/lib/Option';
-import { Select } from '@ui5/webcomponents-react/lib/Select';
+import { Option } from '@ui5/webcomponents-react/dist/Option';
+import { Select } from '@ui5/webcomponents-react/dist/Select';
 import i18n, { getSupportedLanguageResources } from '../../util/i18n';
 
 const style = {

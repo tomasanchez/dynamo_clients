@@ -2,9 +2,9 @@ import React, { useMemo, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 
-import { ShellBar } from '@ui5/webcomponents-react/lib/ShellBar';
-import { Avatar } from '@ui5/webcomponents-react/lib/Avatar';
-import { AvatarShape } from '@ui5/webcomponents-react/lib/AvatarShape';
+import { ShellBar } from '@ui5/webcomponents-react/dist/ShellBar';
+import { Avatar } from '@ui5/webcomponents-react/dist/Avatar';
+import { AvatarShape } from '@ui5/webcomponents-react/dist/AvatarShape';
 import { getUrl } from '../../util/browser/BrowserProvider';
 import PopoverListItems from '../Popover/List/PopoverListItems';
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';

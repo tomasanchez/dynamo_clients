@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { ObjectPageSection } from '@ui5/webcomponents-react/lib/ObjectPageSection';
-import { ObjectPage } from '@ui5/webcomponents-react/lib/ObjectPage';
+import React from 'react';
+import { ObjectPageSection } from '@ui5/webcomponents-react/dist/ObjectPageSection';
+import { ObjectPage } from '@ui5/webcomponents-react/dist/ObjectPage';
 import { useTranslation } from 'react-i18next/';
 import HeaderActions from '../../../components/ObjectHeader/HeaderActions/HeaderActions';
-import { Avatar } from '@ui5/webcomponents-react/lib/Avatar';
+import { Avatar } from '@ui5/webcomponents-react/dist/Avatar';
 import HeaderContent from '../../../components/ObjectHeader/HeaderContent/HeaderContent';
 import { KeyInfos, NameTitle, UserSubTitle } from '../../../components/ObjectHeader/HeaderContent/HeaderTitles';
 import PersonalData from '../../../components/Sections/PersonalData/PersonalData';

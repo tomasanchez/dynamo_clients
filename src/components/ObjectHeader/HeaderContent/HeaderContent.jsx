@@ -1,8 +1,8 @@
 import React from 'react';
-import { FlexBox } from '@ui5/webcomponents-react/lib/FlexBox';
-import { Link } from '@ui5/webcomponents-react/lib/Link';
-import { Label } from '@ui5/webcomponents-react/lib/Label';
-import { ProgressIndicator } from '@ui5/webcomponents-react/lib/ProgressIndicator';
+import { FlexBox } from '@ui5/webcomponents-react/dist/FlexBox';
+import { Link } from '@ui5/webcomponents-react/dist/Link';
+import { Label } from '@ui5/webcomponents-react/dist/Label';
+import { ProgressIndicator } from '@ui5/webcomponents-react/dist/ProgressIndicator';
 import { useTranslation } from 'react-i18next/';
 
 /**

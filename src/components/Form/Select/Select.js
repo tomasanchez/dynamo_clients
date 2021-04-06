@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { spacing } from '@ui5/webcomponents-react-base';
-import { Select as UI5Select } from '@ui5/webcomponents-react/lib/Select';
-import { Option } from '@ui5/webcomponents-react/lib/Option';
-import { ValueState } from '@ui5/webcomponents-react/lib/ValueState';
+import { Select as UI5Select } from '@ui5/webcomponents-react/dist/Select';
+import { Option } from '@ui5/webcomponents-react/dist/Option';
+import { ValueState } from '@ui5/webcomponents-react/dist/ValueState';
 import FieldBase from '../FieldBase/FieldBase';
 
 const Select = ({ field, options, labelText, form: { touched, errors, setFieldValue }, style, ...props }) => {

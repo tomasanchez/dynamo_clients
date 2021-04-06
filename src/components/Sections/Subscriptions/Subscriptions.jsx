@@ -1,10 +1,10 @@
 import React from 'react';
-import { List } from '@ui5/webcomponents-react/lib/List';
-import { StandardListItem } from '@ui5/webcomponents-react/lib/StandardListItem';
+import { List } from '@ui5/webcomponents-react/dist/List';
+import { StandardListItem } from '@ui5/webcomponents-react/dist/StandardListItem';
 import { useTranslation } from 'react-i18next';
 import OverflowToolbar from '../../OverflowToolbar/OverflowToolbar';
-import { Label } from '@ui5/webcomponents-react/lib/Label';
-import { Title } from '@ui5/webcomponents-react/lib/Title';
+import { Label } from '@ui5/webcomponents-react/dist/Label';
+import { Title } from '@ui5/webcomponents-react/dist/Title';
 import { Formatter } from '../../../model/formatter';
 
 const Subscription = (props) => {

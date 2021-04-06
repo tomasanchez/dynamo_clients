@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { FlexibleColumnLayout } from '@ui5/webcomponents-react/lib/FlexibleColumnLayout';
+import { FlexibleColumnLayout } from '@ui5/webcomponents-react/dist/FlexibleColumnLayout';
 import oMoviesSet from '../../util/localservices/mockdata/movies';
 import oCastSet from '../../util/localservices/mockdata/cast';
-import { FCLLayout } from '@ui5/webcomponents-react/lib/FCLLayout';
+import { FCLLayout } from '@ui5/webcomponents-react/dist/FCLLayout';
 import Master from './Master/Master';
 import Detail from './Detail/Detail';
 

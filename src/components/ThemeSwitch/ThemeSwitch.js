@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import { Switch } from '@ui5/webcomponents-react/lib/Switch';
+import { Switch } from '@ui5/webcomponents-react/dist/Switch';
 import { setTheme } from '@ui5/webcomponents-base/dist/config/Theme.js';
 import Constants from '../../util/Constants';
 
